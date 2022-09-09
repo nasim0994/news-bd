@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewsBD - Blog</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Font-Awesome Link-->
+    <script src="https://kit.fontawesome.com/806941754d.js" crossorigin="anonymous"></script>
+    <!-- My CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header area start -->
+    <header class="pt-4">
+        <div class="container">
+            <!-- Top header -->
+            <div class="top-header">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4">
+                        <a class="text-decoration-none text-center text-md-start" href="index.html">
+                            <h5 class="text-info m-0"><Span class="bg-info text-white px-2 pb-1 rounded-2">News</Span>
+                                BD
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="index.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block" href=""><img src="img/nasim.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Main area -->
+    <main style="min-height: 455px;">
+        <section>
+            <div class="container">
+                <!-- 1 -->
+                <div class="card mb-3" style="max-width: 100%x;">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="img/var-let-const.jpeg" class="img-fluid h-100 rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h2 class="card-title fw-semibold"> var let const difference in javascript?</h2>
+                                <p class="card-text">
+                                    <strong>var:</strong> The var is the oldest keyword to declare a variable in
+                                    JavaScript.
+                                    The scope of the var keyword is the global or function scope. It means variables
+                                    defined outside the function can be accessed globally, and variables defined inside
+                                    a particular function can be accessed within the function.
+                                </p>
+                                <p>
+                                    <strong>let:</strong> The let keyword is an improved version of the var keyword.
+                                    The scope of a let variable is only block scoped. It can’t be accessible outside the
+                                    particular block ({block}).
+                                </p>
+                                <p>
+                                    <strong>Const:</strong> The const keyword has all the properties that are the same
+                                    as the let
+                                    keyword, except the user cannot update it.
+                                    When users declare a const variable, they need to initialize it, otherwise, it
+                                    returns an error. The user cannot update the const variable once it is declared.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card mb-3" style="max-width: 100%x;">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="img/function.jpg" class="img-fluid h-100 rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h2 class="card-title  fw-semibold">Regular function vs Arrow function</h2>
+                                <p class="card-text">
+                                    Regular functions created using function declarations or expressions are
+                                    constructible and callable. Since regular functions are constructible, they can be
+                                    called using the new keyword. the arrow functions are only callable and not
+                                    constructible, i.e arrow functions can never be used as constructor functions.
+                                    Arrow function new feature introduced in ES6 that is a more concise syntax for
+                                    writing function expressions. While both regular JavaScript functions and arrow
+                                    functions work in a similar manner, there are certain differences between them.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card mb-3"">
+                    <div class=" row g-0">
+                    <div class="col-md-3">
+                        <img src="img/map-for-find-filter.jpg" class="img-fluid h-100 rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h2 class="card-title  fw-semibold">map vs for each vs find vs filter</h2>
+                            <p class="card-text">
+                                <strong>Foreach</strong>
+                                Foreach takes a callback function and run that callback function on each element of
+                                array one by one.
+                                Basically forEach works as a traditional for loop looping over the array and providing
+                                you array elements to do operations on them.
+                            </p>
+                            <p>
+                                <strong>Filter</strong>
+                                The main difference between forEach and filter is that forEach just loop over the array
+                                and executes the callback but filter executes the callback and check its return value.
+                                If the value is true element remains in the resulting array but if the return value is
+                                false the element will be removed for the resulting array.
+                            </p>
+                            <p>
+                                <strong>Map</strong>
+                                Map like filter and foreach takes a callback and run it against every element on the
+                                array but whats makes it unique is it generate a new array based on your existing array.
+                            </p>
+                            <p>
+                                <strong>Find</strong>
+                                Find is used when you want to select a single element from an array.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="img/template-string.png" class="img-fluid h-100 rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h2 class="card-title  fw-semibold">why use template string?</h2>
+                            <p class="card-text">
+                                Template strings are a powerful feature of modern JavaScript released in ES6. It lets us
+                                insert/interpolate variables and expressions into strings without needing to concatenate
+                                like in older versions of JavaScript. It allows us to create strings that are complex
+                                and contain dynamic elements. Another great thing that comes with template strings are
+                                tags. Tags are functions that take a string and the decomposed parts of the string as
+                                parameters and are great for converting strings to different entities.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer area -->
+    <footer class="py-4 bg-white ">
+        <p class="bg-white text-center text-info">Copyright 2022 News BD</p>
+    </footer>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- My JS Link -->
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
+
+
+
+<!-- 
+    1. var let const defarent
+    2. regular function vs arrow function 
+    3. map vs for each vs find vs filter
+    4. why use template string
+
+ -->

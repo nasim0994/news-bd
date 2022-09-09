@@ -1,0 +1,40 @@
+body {
+    background: #e7e7e7a6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.top-header a img {
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.active {
+    color: #0dcaf0;
+}
+
+.active:hover {
+    color: #000 !important;
+}
+
+ul#categoryFiled li {
+    padding: 0px 9px;
+}
+
+
+.card-text.text-black-50.news-details {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}

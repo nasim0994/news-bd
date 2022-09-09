@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Bd - Home Page</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Font-Awesome Link-->
+    <script src="https://kit.fontawesome.com/806941754d.js" crossorigin="anonymous"></script>
+    <!-- My CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header area start -->
+    <header class="py-4">
+        <div class="container">
+            <!-- Top header -->
+            <div class="top-header">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4">
+                        <a class="text-decoration-none text-center text-md-start" href="index.html">
+                            <h5 class="text-info m-0"><Span class="bg-info text-white px-2 pb-1 rounded-2">News</Span>
+                                BD
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block" href=""><img src="img/nasim.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- header category -->
+            <nav class="navbar navbar-expand-lg">
+                <ul id="categoryFiled" class="nav  flex-column flex-md-row">
+                    <li class="nav-item ">
+                        <a class="nav-link text-black bg-light" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dynamic Category -->
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Main area -->
+    <main style="min-height: 400px;">
+        <div class="container">
+            <!-- total-item-display -->
+            <div class="bg-white p-3 rounded-2">
+                <p class="m-0 "><span id="total-news-number">4</span> News Found</p>
+            </div>
+
+            <!-- Default View area -->
+            <section class="pt-4">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <h6>Sort By View:</h6>
+                            <div>
+                                <select id="select" class="form-select ms-3" aria-label="Default select example">
+                                    <option selected>Default</option>
+                                    <option>Low to High</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-end flex-column flex-md-row">
+                            <div class="btn btn-info me-md-3 mb-2 mb-md-0 text-white">Today's Pick</div>
+                            <div class="btn border-info">Trending</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Display Area -->
+            <section id="news-container" class="py-5">
+                <!-- Dynamic card/news -->
+            </section>
+
+            <section>
+                <!-- Modal -->
+                <div class="modal fade" id="newsDetails" tabindex="-1" aria-labelledby="newsDetailsLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="newsDetailsLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div id="news-details-container" class="modal-body">
+                                <!-- Dynamic -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info text-white"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spinner -->
+            <section id="spinner-container" class="d-flex justify-content-center d-none">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer area -->
+    <footer class="py-4 bg-white ">
+        <p class="bg-white text-center text-info">Copyright 2022 News BD</p>
+    </footer>
+
+    <!-- Bootstrap Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- My Js Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
